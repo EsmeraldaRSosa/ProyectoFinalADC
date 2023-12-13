@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html>
+<head>
+	
+
+  <style>
+  	h1{
+  		font-family: courier new;
+  		color:#C71585;
+      align-text: center;
+
+  	}
+    h2{
+      font-family: courier new;
+      color: MediumVioletRed;
+      align-text: center;
+
+    }
+    h4{
+      font-family: courier new;
+      color: MediumVioletRed;
+      align-text: center;
+
+    }
+  	
+  	p{
+  		font-family: courier new;
+  		color:  rgba(252, 255, 251, 0.756);
+  		font-weight: bold;
+  	}
+  	.center-text{
+  		text-align: center;
+  	}
+
+#header{
+        width: 100%;
+        background:#FFC0CB;
+        margin: 1em auto;
+        border-radius: 1em;
+
+    }
+#contenedor{
+    
+        width: 15px;
+        height: 30px;
+        background:#DB7093;
+        margin:3em auto;
+        border-radius: 1em;
+    }
+ .contenedor{
+        background-color:  #DB7093 ;
+        height: 20vh;
+        margin: 2%;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }   
+    .container{
+        background-color: #DB7093 ;
+        padding: 15px;
+        margin: 20px;
+    }    
+
+  </style>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width-device-width, initial-scale=1">
+  <title>Unidad 1</title>
+</head>
+
+  
+
+        <div align="center" >
+        <img src="C:\Users\ximena\OneDrive\Desktop\TareasERS\PrograWeb\Unidad6/modeloarq.jpg" width="380" height="300"> 
+        </div>
+  
+    <div class="contenedor">
+
+        <div >
+         
+         <h1>1.1 Modelos de Arquitecturas de cómputo.</h1>
+         
+         </div> 
+    </div>
+   
+   
+    
+<body bgcolor=#FFC0CB>
+
+<div class="container">
+ <h2 align = "center">1.1.1 Arquitectura Clásica</h2>
+   <p>
+    Estas arquitecturas se desarrollaron en las primeras computadoras electromecánicas y de tubos de
+    vacío. Aun son usadas en procesadores empotrados de gama baja y son la base de la mayoría de las
+    arquitecturas modernas Arquitectura Mauchly-Eckert (Von Newman).
+    Esta arquitectura fue utilizada en la computadora ENIAC. Consiste en una unidad central de proceso
+    que se comunica a través de un solo bus con un banco de memoria en donde se almacenan tanto los
+    códigos de instrucción del programa, como los datos que serán procesados por este.
+    Esta arquitectura es la más empleada en la actualidad ya, que es muy versátil. Ejemplo de esta
+    versatilidad es el funcionamiento de los compiladores, los cuales son programas que toman como
+    entrada un archivo de texto conteniendo código fuente y generan como datos de salida, el código
+    maquina que corresponde a dicho código fuente (Son programas que crean o modifican otros
+    programas). Estos datos de salida pueden ejecutarse como un programa posteriormente ya que se usa la
+    misma memoria para datos y para el código del programa.
+   </p>
+<div align = "center">
+   <img  src="C:\Users\ximena\OneDrive\Desktop\TareasERS\PrograWeb\Unidad6/img1.jpg" width="380" height="300">
+</div>
+  
+
+<div class="container">
+    <h2 align = "center">1.1.2 Arquitecturas Segmentadas</h2>
+    <P >
+     Las arquitecturas segmentadas o con segmentación del cauce buscan mejorar el desempeño realizando
+    paralelamente varias etapas del ciclo de instrucción al mismo tiempo. El procesador se divide en varias
+    unidades funcionales independientes y se dividen entre ellas el procesamiento de las instrucciones. Para
+    comprender mejor esto, supongamos que un procesador simple tiene un ciclo de instrucción sencillo
+    consistente solamente en una etapa de búsqueda del código de instrucción y en otra etapa de ejecución
+    de la instrucción. En un procesador sin segmentación del cauce, las dos etapas se realizarían de manera
+    secuencial para cada una de la instrucciones, como lo muestra la siguiente figura.
+    </P>
+    <div align = "center">
+        <img  src="C:\Users\ximena\OneDrive\Desktop\TareasERS\PrograWeb\Unidad6/img2.jpg" width="180" height="100">
+     </div>
+</div>
+
+
+<div class="container">
+    <h2 align = "center">1.1.3 Arquitecturas de Multi-procesamiento</h2>
+    <p>
+        Cuando se desea incrementar el desempeño más aya de lo que permite la técnica de segmentación del
+        cauce (limite teórico de una instrucción por ciclo de reloj), se requiere utilizar más de un procesador
+        para la ejecución del programa de aplicación.
+        Las CPU de multiprocesamiento se clasifican de la siguiente manera (Clasificación de Flynn):
+        ● SISO – (Single Instruction, Single Operand ) computadoras Monoprocesador
+        ● SIMO – (Single Instruction, Multiple Operand ) procesadores vectoriales, Exenciones MMX
+        ● MISO – (Multiple Instruction, Single Operand ) No implementado
+        ● MIMO – (Multiple Instruction, Multiple Operand ) sistemas SMP, Clusters, GPUs
+        Procesadores vectoriales – Son computadoras pensadas para aplicar un mismo algoritmo numérico a
+        una serie de datos matriciales, en especial en la simulación de sistemas físicos complejos, tales como
+        simuladores para predecir el clima, explosiones atómicas, reacciones químicas complejas, etc., donde
+        los datos son representados como grandes números de datos en forma matricial sobre los que se deben
+        se aplicar el mismo algoritmo numérico.
+        La mayoría de los procesadores modernos incluye algunas instrucciones de tipo vectorial, tales como
+        las extensiones al conjunto de instrucciones tales como MMX y SSE. Estas instrucciones les permiten
+        procesar flujos multimedia más eficientemente.
+        Los Procesadores Digitales de Señales (DSP), son procesadores especializados en el procesamiento de
+        señales tales como audio, vídeo, radar, sonar, radio, etc. Cuentan con instrucciones tipo vectorial que
+        los hace muy aptos para dicha aplicación. Suelen utilizarse en conjunto con un microcontrolador en
+        dispositivos como reproductores de audio, reproductores de dvd y Blueray, teléfonos celulares,
+        sistemas de entretenimiento, sistemas de adquisición de datos, instrumentos médicos, controles
+        industriales, etc.
+    </p>
+    <div align = "center">
+        <img  src="C:\Users\ximena\OneDrive\Desktop\TareasERS\PrograWeb\Unidad6/img3.jpg" width="280" height="300">
+     </div>
+</div>
+
+</div>
+</div>
+
+</div>
+</body>    		
+ 
+<div class="contenedor">
+
+    <div >
+           <h1>1.2 Análisis de los componentesn.</h1>
+           
+           </div> 
+         </div>  
+<body bgcolor=#FFC0CB>
+     
+    <div class="container">
+     <h2 align = "center">1.2.1 CPU</h2>
+     <h4 align = "center">1.2.1.1 Arquitecturas</h4>
+       <p>
+        Ademas de las arquitecturas clásicas mencionadas anteriormente, en la actualidad han aparecido
+arquitecturas híbridas entre la Von Newman y la Harvard, buscando conservar la flexibilidad, pero
+mejorando el rendimiento.
+Uno de los cambios más importante de los últimos años en diseño de las computadoras se dio durante
+los años 1980s, con la aparición de la corriente de diseño conocida como computadoras de conjunto
+reducido de instrucciones (RISC, por sus siglas en ingles). Esta escuela pretende aplicar un enfoque
+totalmente distinto al tradicional hasta entonces, que paso a conocerse como computadoras de conjunto
+complejo de instrucciones (CISC) para diferenciarla de la nueva tendencia.
+La tendencia tradicional, representada por las arquitecturas CISC (Complex Instruction Set Computers)
+se caracterizan por tener un número amplio de instrucciones y modos de direccionamiento. Se
+implementan instrucciones especiales que realizan funciones complejas, de manera que un
+programador puede encontrar con seguridad, una instrucción especial que realiza en hardware la
+función que el necesita. El número de registros del CPU es limitado, ya que las compuertas lógicas del
+circuito integrado se emplean para implementar las secuencias de control de estas instrucciones
+especiales.
+       </p>
+       <div class="container">
+        <h4 align = "center">1.2.1.2 Tipos</h4>
+        <p>
+            Los CPUs modernos pueden clasificarse de acuerdo a varias características, tales como: el tamaño del
+    ALU o del Bus de conexión al exterior (8, 16, 32, 64 bits),si tienen cauce segmentado o no
+    segmentado, si con tipo CISC o RISC, Von Newan o Harvard y si solo tienen instrucciones enteras o
+    implementan también instrucciones de punto flotante
+        </p>
+    </div>
+    <div class="container">
+        <h4 align = "center">1.2.1.3 Características</h4>
+        <p>
+            Las características más importantes a considerar al escoger un CPU para usarlo en una aplicación, son:
+•Modelo del programador (Conjunto de registros que el programador puede utilizar), forman el modelo
+mental del CPU que el programador utiliza al programar en ensamblador.
+<br>
+•Conjunto de instrucciones que puede ejecutar el CPU
+<br>
+•Modos de direccionamiento que pueden usarse para obtener los operandos de las instrucciones.
+<br>
+•Ciclo de instrucción (el conjunto de pasos que realiza el CPU para procesar cada instrucción)
+<br>
+•Buses de interconexión, usados para que el CPU lea y escriba a la memoria y a los dispositivos de
+entrada y salida
+        </p>
+    </div>      
+    <div class="container">
+        <h4 align = "center">1.2.1.4 Funcionamiento</h4>
+        <p>
+            Debido a la gran variedad de CPU disponibles comercialmente, se explicara el funcionamiento de un
+            unidad central de proceso imaginaria muy simple, pero que resume el funcionamiento básico de la
+            mayoría de los CPUs. Este CPU es similar a las primeras computadoras existentes en los años 1950s
+            (Basado en el diseño explicado en Mano, M. Morris. Arquitectura de computadoras. Pearson 1994).
+            Esta computadora contara con una memoria de 4096 palabras de 16 bits cada una. Esto corresponde a
+            un bus de direcciones de 12 bits y un bus de datos de 16 bits). En cada localidad de memoria se podrá
+            almacenar un entero de 16 bits o el código de una instrucción, también de 16 bits.
+            Todos los CPU tienen como función principal la ejecución de un programa acorde a la aplicación del
+            mismo. Un programa es un conjunto de instrucciones almacenadas de acuerdo al orden en que deben
+            ejecutarse. Por lo tanto, toda computadora debe ser capaz de procesar las instrucciones de su programa
+            en un ciclo de instrucción, consistente en un número de etapas que varia con cada CPU, pero que
+            tradicionalmente han sido tres:
+            <br>
+            1-Búsqueda del código de Instrucción. Esta consiste en leer de la memoria cual será la siguiente
+            instrucción a ejecutar, la cual esta almacenada en forma de un código numérico que indica cual de todas
+            las operaciones que puede realizar el CPU sera la siguiente y con que operandos se ejecutara.
+            <br>
+            2- Decodificación. Consiste en tomar el código numérico e identificar a cual de las operaciones que
+            puede realizar el CPU corresponde dicho código. El proceso contrario, la codificación, consiste en
+            conociendo la instrucción, determinar el número que la va a representar. Esta etapa usualmente se
+            realiza con un decodificador binario.
+            <br>
+            3- Ejecución. En esta etapa se lleva a cabo la operación sobre los datos que se vallan a procesar. En
+            general, la unidad de control (CU) genera las señales de control necesarias para llevar los datos a las
+            entradas de la Unidad Aritmética Lógica, la cual efectuará las operaciones aritméticas y lógicas.
+            Posteriormente, la unidad de control generara las señales de control necesarias para transferir la salida
+            de la Unidad Aritmética Lógica al registro donde serán almacenados los resultados para su uso
+            posterior.
+        </p>
+        <div align = "center">
+            <img  src="C:\Users\ximena\OneDrive\Desktop\TareasERS\PrograWeb\Unidad6/img4.jpg" width="280" height="300">
+         </div>
+    </div>      
+</div>
+
+</body>        
+
+</html>

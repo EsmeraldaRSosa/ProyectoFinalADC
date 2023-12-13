@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html>
+<head>
+	
+
+  <style>
+  	h1{
+  		font-family: courier new;
+  		color:#C71585;
+      align-text: center;
+
+  	}
+    h2{
+      font-family: courier new;
+      color: MediumVioletRed;
+      align-text: center;
+
+    }
+    h4{
+      font-family: courier new;
+      color: MediumVioletRed;
+      align-text: center;
+
+    }
+  	
+  	p{
+  		font-family: courier new;
+  		color:  rgba(252, 255, 251, 0.756);
+  		font-weight: bold;
+  	}
+  	.center-text{
+  		text-align: center;
+  	}
+
+#header{
+        width: 100%;
+        background:#FFC0CB;
+        margin: 1em auto;
+        border-radius: 1em;
+
+    }
+#contenedor{
+    
+        width: 15px;
+        height: 30px;
+        background:#DB7093;
+        margin:3em auto;
+        border-radius: 1em;
+    }
+ .contenedor{
+        background-color:  #DB7093 ;
+        height: 20vh;
+        margin: 2%;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }   
+    .container{
+        background-color: #DB7093 ;
+        padding: 15px;
+        margin: 20px;
+    }    
+
+  </style>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width-device-width, initial-scale=1">
+  <title>Unidad 6</title>
+</head>
+
+<div align="center" >
+    <img src="C:\Users\ximena\OneDrive\Desktop\TareasERS\PrograWeb\Unidad6/img31.jpg" width="380" height="300"> 
+    </div>
+
+<div class="contenedor">
+    <div >
+     <h1>3.1 Chip Set</h1>
+     </div> 
+</div>
+
+<body bgcolor="#FFC0CB">
+    
+    <div class=" container">
+        <p>
+            El Circuito Integrado Auxiliar o Chipset es un conjunto de circuitos integrados que se encarga de realizar las funciones que el microprocesador delega en ellos. Chipset traducido literalmente del inglés significa conjunto de circuitos integrados. Se designa  el circuito integrado auxiliar al circuito integrado que es periférico a un sistema pero necesario para el funcionamiento del mismo. La mayoría de los sistemas necesitan más de un circuito integrado auxiliar; sin embargo, el término chipset se suele emplear en la actualidad cuando se habla sobre las placas base de los IBM PCs.
+En los procesadores habituales el chipset está formado por 2 circuitos auxiliares al procesador principal:
+ El puente norte se usa como puente de enlace entre dichoü procesador y la memoria. El North Bridge controla las funciones de acceso hacia y entre el microprocesador, la memoria RAM, el puerto gráfico AGP, y las comunicaciones con el South Brigde.
+ El South Bridge controla los dispositivos asociados como son la controladora de discos IDE, puertos USB, Firewire, SATA, RAID, ranuras PCI, ranura AMR, ranura CNR, puertos infrarrojos, disquetera, LAN y una larga lista de todos los elementos que podamos imaginar integrados en la placa madre. El puente sur es el encargado de comunicar el procesador con el resto de los periféricos).
+        </p>
+
+         <div class="container">
+            <h2 align = "center">3.1.1 CPU</h2>
+            <p>
+                UCP o procesador, interpreta y lleva a cabo las instrucciones de los programas, efectúa manipulaciones aritméticas y lógicas con los datos y se comunica con las demás partes del sistema. Una UCP es una colección compleja de circuitos electrónicos. Cuando se incorporan todos estos circuitos en un chip de silicio, a este chip se le denomina microprocesador. La UCP y otros chips y componentes electrónicos se ubican en un tablero de circuitos o tarjeta madre.
+Los factores relevantes de los chips de UCP son:
+<br>
+Compatibilidad: No todo el soft es compatible con todas las UCP. En algunos casos se pueden resolver los problemas de compatibilidad usando
+software especial.
+<br>
+Velocidad: La velocidad de una computadora está determinada por la velocidad de su reloj interno, el dispositivo cronométrico que produce pulsos eléctricos para sincronizar las operaciones de la computadora. Las computadoras se describen en función de su velocidad de reloj, que se mide en mega hertz. La velocidad también está determinada por la arquitectura del procesador, es decir el diseño que establece de qué manera están colocados en el chip los componentes individuales de la CPU. Desde la perspectiva del usuario, el punto crucial es que “más rápido” casi siempre significa “mejor”.
+<br>
+EL PROCESADOR
+El chip más importante de cualquier placa madre es el procesador. Sin el la computadora no podría funcionar. A menudo este componente se determina CPU, que describe a la perfección su papel dentro del sistema. El procesador es realmente el elemento central del proceso de procesamiento de datos.
+Los procesadores se describen en términos de su tamaño de palabra, su velocidad y la capacidad de su RAM asociada.
+Tamaño de la palabra: Es el número de bits que se maneja como una unidad en un sistema de computación en particular.
+Velocidad del procesador: Se mide en diferentes unidades según el tipo de computador:
+MHz (Megahertz): para microcomputadoras. Un oscilador de cristal controla la ejecución de instrucciones dentro del procesador. La velocidad del procesador de una micro se mide por su frecuencia de oscilación o por el número de ciclos de reloj por segundo. El tiempo transcurrido para un ciclo de reloj es 1/frecuencia.
+MIPS (Millones de instrucciones por segundo): Para estaciones de trabajo, minis y macrocomputadoras. Por ejemplo una computadora de 100 MIPS puede ejecutar 100 millones de instrucciones por segundo.
+FLOPS (floating point operations per second, operaciones de punto flotante por segundo): Para las supercomputadoras. Las operaciones de punto flotante incluyen cifras muy pequeñas o muy altas. Hay supercomputadoras para las cuales se puede hablar de GFLOPS (Gigaflops, es decir 1.000 millones de FLOPS).
+Capacidad de la RAM: Se mide en términos del número de bytes que puede almacenar. Habitualmente se mide en KB y MB, aunque ya hay computadoras en las que se debe hablar de GB.
+            </p>
+         </div>   
+   <div class="container">
+     <h2 align="center">3.1.2 Controlador del Bus</h2>
+     <p>
+ El controlador del bus se encarga de la frecuencia de funcionamientoy las señales de sincronismo, temporización y control.
+Está ubicado en un chip en la placa base.
+<br>
+CONTROLADOR DEL BUS
+El Bus es la vía a través de la que se van a transmitir y recibir todas las comunicaciones, tanto internas como externas, del sistema informático. El bus es solamente un Dispositivo de Transferencia de Información entre los componentes conectados a él, no almacena información alguna en ningún momento. Los datos, en forma de señal eléctrica, sólo permanecen en el bus el tiempo que necesitan en recorrer la distancia entre los dos componentes implicados en la transferencia.
+     </p>
+   </div>
+   <div class="container">
+    <h2 align="center">3.1.3 Puertos de E/S</h2>
+    <p>
+        Puertos de entrada y salida
+PUERTO PARALELO
+El puerto paralelo (protocolo Centronics) se utiliza generalmente para manejar impresoras. Sin embargo, dado que este puerto tiene un conjunto de entradas y salidas digitales, se puede emplear para hacer prácticas experimentales de lectura de datos y control de dispositivos Un puerto paralelo es una interfaz entre un ordenador y un periférico cuya principal característica es que los bits de datos viajan juntos enviando un byte (8 bits) completo o más a la vez. Es decir, se implementa un cable o una vía física para cada bit de datos formando un bus. El puerto paralelo más conocido es el puerto de impresora
+(que cumplen más o menos la norma IEEE 1284, también denominado tipo Centronics), el cual destaca por su sencillez y transmite 8 bits a la vez. Se ha utilizado principalmente para conectar impresoras, pero también ha sido usado para programadores EPROM, escáneres, interfaces de red Ethernet a 10 MB, unidades ZIP y Super Disk?, así como para comunicación entre dos PCs. Inicialmente se colocó al puerto paralelo en la tarjeta del “Adaptador de impresora de IBM”, o también con la tarjeta del “monitor monocromático y adaptador de impresora de IBM”.
+En la actualidad, el puerto paralelo se incluye muy poco en la placa madre de la computadora. No obstante, la conexión del puerto con el mundo externo no ha sufrido modificaciones. Este puerto utiliza un conector hembra DB 25 en la computadora y un conector especial macho, llamado también Centronic que tiene 36 pines.
+En la actualidad se conoce cuatro tipos de puerto paralelo:
+<br>
+· Puerto paralelo estándar (Standart Parallel Port SPP)
+<br>
+· Puerto Paralelo PS/2 (bidireccional)
+<br>
+· Enhanced Parallel Port (EPP)
+<br>
+· Extended Capability Port (ECP)
+<br>
+PUERTO PS/2
+El puerto PS/2 toma su nombre de la serie de ordenadores IBM Personal System/2 en que fue creada por IBM en 1987, y empleada para conectar teclados y ratones. Muchos de los adelantos presentados fueron inmediatamente adoptados por el mercado del PC, siendo este conector uno de los primeros.
+La comunicación en ambos casos es serial (bidireccional en el caso del teclado), y controlada por microcontroladores situados en la placa madre. No han sido diseñados para ser intercambiados en caliente, y el hecho de que al hacerlo no suela ocurrir nada es más debido a que los microcontroladores modernos son mucho más resistentes a cortocircuitos en sus líneas de entrada/salida.
+<br>
+PUERTO COM
+Un puerto serie o puerto serial es una interfaz de comunicaciones de datos digitales, frecuentemente utilizado por computadoras y periféricos, en donde la información es transmitida bit a bit enviando un solo bit a la vez, en contraste con el puerto paralelo que envía varios bits simultáneamente. La comparación entre la transmisión en serie y en paralelo se puede explicar con analogía con las carreteras. Una carretera tradicional de un sólo carril por sentido sería como la transmisión en serie y una autovía con varios carriles por sentido sería la transmisión en paralelo, siendo los coches los bits.
+Aunque el puerto PS/2 es idéntico eléctricamente al antiguo y grande conector de teclado AT DIN 5 (con un sencillo adaptador puede usarse uno en otro), por su pequeño tamaño permite que en donde antes sólo entraba el conector de teclado lo hagan ahora el de teclado y ratón, liberando además el puerto RS-232 usado entonces mayoritariamente para los ratones, y que presentaba el inconveniente de compartir interrupciones con otro puerto serial, lo que imposibilitaba el conectar un ratón al COM1 y un modem al COM3, pues cada vez que se movía el ratón cortaba al modem la llamada.
+En la actualidad, el conector PS/2 fue también reemplazado por el puerto USB, ya que ofrece mayor velocidad de conexión, la posibilidad de conectar y desconectar en caliente, además de ofrecer múltiples posibilidades de conexión de más de un periférico de forma compatible, no importando el sistema operativo.
+<br>
+PUERTO USB
+El Universal Serial Bus (bus universal en serie) es un puerto que sirve para conectar periféricos a una computadora. Fue creado en 1996 por siete empresas: IBM, Intel, Northern Telecom, Compaq, Microsoft, Digital Equipment Corporation y NEC.
+El estándar incluye la transmisión de energía eléctrica al dispositivo conectado. Algunos dispositivos requieren una potencia mínima, así que se pueden conectar varios sin necesitar fuentes de alimentación extra. La mayoría de los concentradores incluyen fuentes de alimentación que brindan energía a los dispositivos conectados a ellos, pero algunos dispositivos consumen tanta energía que necesitan su propia fuente de alimentación.
+El diseño del USB tenía en mente eliminar la necesidad de adquirir tarjetas separadas para poner en los puertos bus ISA, PCI o PCI Express, y mejorar las capacidades plug & play permitiendo a esos dispositivos ser conectados o desconectados al sistema sin necesidad de reiniciar. Cuando se conecta un nuevo dispositivo, el servidor lo enumera y agrega el software necesario para que pueda funcionar. El puerto USB puede conectar los periféricos como ratón, teclados, escáneres, cámaras digitales, teléfonos celulares, reproductores multimedia, impresoras, discos duros externos, tarjetas de sonido, sistemas de adquisición de datos y componentes de red. Para dispositivos multimedia como escáneres y cámaras digitales, el USB se ha convertido en el método estándar de conexión. Para impresoras, el USB ha crecido tanto en popularidad que ha empezado a desplazar a los puertos paralelos, porque el USB hace sencillo el poder agregar más de una impresora a un ordenador personal.
+<br>
+Controlador Interrupciones Ensamble Componentes
+CONTROLADOR PROGRAMABLE DE INTERRUPCIONES 8259
+Este circuito integrado controla las interrupciones del sistema. Como el microprocesador sólo posee dos entradas de interrupción, y puede controlar muchas más, es necesario algún integrado que no permita ello. El 8259 cumple este propósito.
+El funcionamiento del 8259 es muy sencillo: Supongamos que no queda ninguna interrupción pendiente y el CPU está trabajando en el “Programa principal”. Al activarse una línea de interrupción, el 8259 verifica que no haya otra interrupción pendiente, y si no la hay, envía una señal a través del pin INTR hacia el pin INTR del CPU, adicionalmente, envía a través
+del bus de datos, el número de interrupción que se ha activado, de tal manera que el CPU ya sabe qué servicio de interrupción va a usar. Una vez que recibió el CPU este valor, activa su pin INTA, indicando que ya recibió y está ejecutando el servicio. Una vez que el CPU termina, el pin INTA se desactiva, indicando al 8259 que está listo para procesar otras interrupciones.
+Las rutinas de los servicios de interrupción están vectorizadas en las primeras posiciones de memoria, y están distribuidas de la manera siguiente: El los dos primeros bytes corresponden al valor que irá al registro IP, que indica el desplazamiento; y los dos siguientes, corresponden al registro CS, que indica el segmento donde está el servicio de interrupción. Estos dos pares de bytes se inician en la posición de memoria 0000h y corresponden a la interrupción 0; los siguientes cuatro corresponden a la interrupción 1, y así sucesivamente hasta las 256 interrupciones (total 1024 bytes). Esto significa que el usuario puede crear su propio servicio de interrupción y accederlo a través de la manipulación de estos bytes.
+El 8259, posee varios modos de configuración, dependiendo de la manera cómo se desea que se traten a las interrupciones
+Hay que tener en cuenta que la interrupción no enmascarable NMI, va directamente a CPU y es la encargada de indicar errores de paridad en la memoria, fallos de circuiteria y el procesador matemático. En el PC/XT original es posible un total de 256 interrupciones, de las cuales 8 son por hardware y las demás por software.
+<br>
+Controlador Dma Ensamble Componentes
+El mecanismo de acceso directo a memoria está controlado por un chip específico, el DMAC (“DMA Controller”), que permite realizar estos intercambios sin apenas intervención del procesador. En los XT estaba integrado en un chip 8237A que proporcionaba 4 canales de 8 bits (puede mover solo 1 Byte cada vez); sus direcciones de puerto son 000–00Fh. Posteriormente en los AT se instalaron dos de estos integrados y las correspondientes líneas auxiliares en el bus de control.
+En contra de lo que podría parecer, el resultado no fue disponer de 8 canales, porque el segundo controlador se colgó en “Cascada” de la línea 4 del primero
+<br>
+(más adelante se explica este concepto ). Los canales del segundo DMAC está asignado a las direcciones 0C0–0DFh y son de 16 bits. Pueden mover 2 Bytes (de posiciones contiguas) cada vez.
+Cada canal tiene asignada una prioridad para el caso de recibirse simultáneamente varias peticiones (los números más bajos tienen prioridad más alta). Pueden ser utilizados por cualquier dispositivo que los necesite (suponiendo naturalmente que esté diseñado para soportar este modo de operación). Cada sistema los asigna de forma arbitraria, pero hay algunos cuya asignación es estándar.
+    </p>
+   </div>
+   <div class="container">
+     <h2 align="center">3.1.4 Circuitos de temporización y control.</h2>
+     <p>
+        El Circuito de temporizador y control:
+        <br>
+        Es una red secuencial que acepta un código que define la operación que se va a ejecutar y luego prosigue a través de una secuencia de estados, generando una correspondiente secuencia de señales de control. Estas señales de control incluyen el control de lectura ‑ escritura y señales de dirección de memoria válida en el bus de control del sistema. Otras señales generadas por el controlador se conectan a la unidad aritmética ‑ lógica y a los registros internos del procesador para regular el flujo de información en el procesador y a, y desde, los buses de dirección y de datos del sistema.
+     </p>
+   </div> 
+   <div class="container">
+    <h2 align = "center">3.1.5 Controladores De Video</h2>
+    <p>
+        Un controlador de vídeo o VDC es un circuito integrado que es el principal componente de un generador de señal de vídeo, un dispositivo encargado de la producción de una señal de vídeo en informática o un sistema de juego. Algunos de Desarrollo de Aldea también generar una buena señal, pero en ese caso no es su función principal.
+        La mayoría de los CDA se utilizan a menudo en la antigua casa-ordenadores de los años 80, sino también en algunos de los primeros sistemas de video juego.
+        El VDC siempre es el principal componente de la señal de vídeo generador de la lógica, pero a veces también hay otros chips utilizados, tales como RAM para celebrar
+        <br>
+        el píxel de datos, para celebrar ROM carácter fuentes, o quizás algunos discretos lógica, como los registros de cambio eran necesarias para construir un sistema completo. En cualquier caso, es el VDC de la responsabilidad de generar el calendario de las necesarias señales de vídeo, tales como la horizontal y vertical de sincronización de señales, y el intervalo de corte de señal.
+        La mayoría de las veces el chip VDC está completamente integrado en la lógica de la computadora principal del sistema, (su memoria RAM de vídeo aparece en el mapa de memoria principal de la CPU), pero a veces funciona como un co procesador que puede manipular el contenido de RAM de vídeo independientemente de la el procesador principal.
+        Tipos de controladores de vídeo
+        Los pocos tipos de controladores se examinan a continuación:
+        Cambiadores de vídeo, o “cambio de registro de vídeo basado en los sistemas” son el tipo más simple de los controladores de video, que se encargan de la sincronización de señales de vídeo, pero normalmente no tienen acceso a la RAM de vídeo directamente. Consiguen el vídeo los datos de la CPU principal, un byte a la vez, y convertirlo en una serie poco corriente (de ahí el nombre técnico “cambiador de vídeo”). Esta serie de flujo de datos se utiliza, junto con la sincronización de las señales, a la salida de un (color) de señal de vídeo. Las principales necesidades de la CPU para hacer la mayor parte de la obra. Normalmente, estos chips sólo un apoyo muy baja resolución modo de gráficos de trama.
+    </p>
+   </div>  
+    </div>
+</body>
+
+<div class="contenedor">
+    <div >
+     <h1>3.2 Aplicaciones</h1>
+     </div> 
+</div>
+
+<body bgcolor="#FFC0CB">
+    
+    <div class=" container">
+       <h2 align="center">3.2.1 Entrada-Salida</h2>
+       <p>
+        Las computadoras electrónicas modernas son una herramienta esencial en muchas áreas: industria, gobierno, ciencia, educación,…, en realidad en casi todos los campos de nuestras vidas.
+El papel que juegan los dispositivos periféricos de la computadora es esencial; sin tales dispositivos ésta no sería totalmente útil. A través de los dispositivos periféricos podemos introducir a la computadora datos que nos sea útiles para la resolución de algún problema y por consiguiente obtener el resultado de dichas operaciones, es decir; poder comunicarnos con la computadora.
+La computadora necesita de entradas para poder generar salidas
+y éstas se dan a través de dos tipos de dispositivos periféricos existentes:
+<br>
+• Dispositivos periféricos de entrada.
+<br>
+• Dispositivos periféricos de salida.
+<br>
+Dispositivos periféricos de entrada y salida de un computador Enviado por Aguinagalde A. Introducción Dispositivos periféricos de entrada Dispositivos periféricos de salida Conclusión Recomendaciones Anexos Bibliografía
+Introducción.
+<br>
+Las Computadoras son una herramienta esencial, prácticamente en casi todos los campos de nuestras vidas; es útil, ayuda a la mejora y excelencia del trabajo; lo que lo hace mucho mas fácil y práctico
+En poco tiempo, las computadoras se han integrado de tal manera a nuestra vida cotidiana, puesto que han transformado los procesos laborales complejos y de gran dificultad hacia una manera más eficiente de resolver los problemas difíciles, buscándole una solución práctica.
+El papel que juegan los dispositivos periféricos de la computadora es esencial, ya que sin tales dispositivos la computadora no sería útil a los usuarios.
+Los dispositivos periféricos nos ayudan a introducir a la computadora los datos para que esta nos ayude a la resolución de problemas y por consiguiente obtener el resultado de dichas operaciones, es decir; estos dispositivos nos ayudan a comunicarnos con la computadora, para que esta a su vez nos ayude a resolver los problemas que tengamos y realice las operaciones que nosotros no podamos realizar manualmente.
+       </p>
+     <div class="container">
+        <h2 align="center">3.2.2 Almacenamiento</h2>
+        <p>
+            Unidades de disquete.
+Por malo y anticuado que sea un ordenador, siempre dispone de al menos uno de estos aparatos. Su capacidad es totalmente insuficiente para las necesidades actuales, pero cuentan con la ventaja que les dan los muchos años que llevan como estándar absoluto para almacenamiento portátil.
+Tamaño Tipo de disco Capacidad Explicación
+<br>
+5,25” SS/DD 180 Kb Una cara, doble densidad. Desfasado
+<br>
+5,25” DS/DD 360 Kb Dos caras, doble densidad. Desfasado
+<br>
+5,25” DS/HP 1,2 MB Dos caras, alta densidad. Desfasado pero útil
+<br>
+3,5” DS/DD 720 Kb Dos caras, doble densidad. Desfasado pero muy común
+<br>
+3,5” DS/HD 1,44 MB Dos caras, alta densidad. El estándar actual.
+        </p>
+     </div> 
+    <div class="container">
+        <h2 align="center">3.3.1 Negocios</h2>
+        <p>
+            Este documento presenta una pequeña descripción del desarrollo, a partir de los años 40 y hasta la fecha actual, de la evolución histórica de la herramienta computacional, en su impacto sobre los diferentes bloques del proceso administrativo, ubicados en el tiempo desde los modelos lineales y aislados hasta las aplicaciones de teoría de sistemas que caracterizan la informática administrativa de nuestros días y del futuro inmediato.
+Presenta asimismo una discusión sobre los alcances de los esquemas de planeación estratégica, en el marco de los problemas de gestión del presente.
+Definitivamente, la tecnología en general ha sido la causa principal
+y la acción más directa para la transformación del trabajo de las organizaciones en la posguerra del siglo XX. Tanto los bienes de capital «duros» (computadores, teléfonos, videos, facsímiles, grabadoras, etc.), como los programas y sistemas de información y comunicación en general, han incrementado enormemente la productividad y eficiencia de las organizaciones. Tenemos como ejemplos los siguientes: bases de datos en redes de todo orden y topología, sistemas de reservaciones en aerolíneas, sistemas de contabilidad y nóminas, archivos clínicos en centros de salud, sistemas de conmutación electrónica y un sinnúmero de otras aplicaciones a procesos administrativos.
+Esta inversión en recursos humanos y materiales que han efectuado las organizaciones en la segunda mitad del siglo XX, ofrece muchas soluciones y a la vez problemas de toda índole. Por ejemplo, en el área de investigación espacial, existen programas de simulación para misiones espaciales, en los cuales se valoran miles de variables antes de realizar físicamente el viaje. Asimismo, en áreas más convencionales como mercadotecnia, es posible analizar una multiplicidad de variables por programación lineal u otras herramientas analíticas en la etapa de diseño, con anterioridad al lanzamiento de un producto o servicio.
+Toda esta tecnificación de la toma de decisiones ha revolucionado muchos aspectos de estrategias de mercado y competitividad. A principios del siglo XX, la estructura de las organizaciones privadas era fácil de percibir. Existía una clara división tanto estructural como funcional en las empresas, e incluso muchas veces de tipo legal, o bien, dictada por la costumbre. Los bancos se encargaban de la custodia y uso del dinero, las casas de bolsa se entendían con acciones y bonos, las de bienes raíces manipulaban terrenos y transacciones en escrituras, y las compañías de seguros, pólizas sobre propiedades o vidas. Pero en determinado momento, las barreras que naturalmente se habían erigido, asimismo fueron cayendo, debido a que la información fue tomando un carácter más concreto y dinámico: los bancos procesan información o, lo que es equivalente, dinero, involucrado en moneda, acciones, seguros y propiedades. Hoy, las funciones de la Ford Motors no solo abarcan venta de autos, sino que están sumamente diversificadas en otras áreas de la economía nacional e internacional: otras empresas de la Corporación Ford, denominadas «unidades estratégicas de negocios» (UEN), abarcan bienes raíces, recursos naturales, turismo, ecología, etc. Los teóricos llaman a esta estrategia «diversificación multicéntrica», que se diferencia de la concéntrico por cuanto en esta última las unidades de negocios tienen misiones muy similares. Esto demuestra que nuestras sociedades han sufrido, recientemente, una verdadera evolución hacia la complejidad, con ruptura de barreras tradicionales de comportamiento organizacional, a lo que se ha llamado «globalización» del sector económico o socioeconómico1. Esto es, de hecho, el producto más importante que ha brindado la tecnología en general, y la tecnología informática en particular.
+        </p>
+    </div>
+    <div class="container">
+        <h2 align="center">3.3.3 Comercio Electrónico</h2>
+        <p>
+            El desarrollo de estas tecnologías y de las telecomunicaciones ha hecho que los intercambios de datos crezcan a niveles extraordinarios, simplificándose cada vez mas y creando nuevas formas de comercio, y en este marco se desarrolla el Comercio Electrónico.
+Comercio Electrónico
+Se considera “Comercio Electrónico” al conjunto de aquellas transacciones comerciales y financieras realizadas a través del procesamiento y la transmisión de información, incluyendo texto, sonido e imagen.
+<br>
+TIPOS DE TRANSACCIONES DE COMERCIO ELECTRONICO
+“Business to business” (entre empresas): Las empresas pueden intervenir como compradoras o vendedoras,
+o como proveedoras de herramientas o servicios de soporte para el comercio electrónico, instituciones financieras, proveedores de servicios de Internet, etc.
+“Business to consumers” (Entre empresa y consumidor): Las empresas venden sus productos y prestan sus servicios a través de un sitio Web a clientes que los utilizarán para uso particular.
+“Consumers to consumers” (Entre consumidor y consumidor): Es factible que los consumidores realicen operaciones entre sí, tal es el caso de los remates en línea.
+“Consumers to administrations” (Entre consumidor y administración): Los ciudadanos pueden interactuar con las Administraciones Tributarias a efectos de realizar la presentación de las declaraciones juradas y/o el pago de los tributos, obtener asistencia informativa y otros servicios.
+“Business to administrations” (Entre empresa y administración): Las administraciones públicas actúan como agentes reguladores y promotores del comercio electrónico y como usuarias del mismo.
+<br>
+VENTAJAS DEL COMERCIO ELECTRÓNICO
+Para las Empresas: Desaparecen los límites geográficos y de tiempo.
+Disponibilidad las 24 horas del día, 7 días a la semana, todo el año.
+Reducción considerable de inventarios.
+Agilizar las operaciones del negocio.
+Menos inversión en los presupuestos publicitarios.
+Reducción de precios por el bajo coste del uso de Internet en comparación con otros medios de promoción, lo cual implica mayor competitividad.
+Globalización y acceso a mercados potenciales de millones de clientes.
+Para los clientes:
+<br>
+Un medio que da poder al consumidor de elegir en un mercado global acorde a sus necesidades.
+Rapidez al realizar los pedidos.
+Servicio pre y post-venta on-line.
+Reducción de la cadena de distribución, lo que le permite adquirir un producto a un mejor precio.
+Mayor interactividad y personalización de la demanda.
+Información inmediata sobre cualquier producto, y disponibilidad de acceder a la información en el momento que así lo requiera.
+Permite el acceso a más información.
+<br>
+DESVENTAJAS DEL COMERCIO ELECTRÓNICO
+Desconocimiento de la empresa: No conocer la empresa que vende es un riesgo del comercio electrónico, ya que ésta puede estar en otro país o en el mismo, pero en muchos casos las “empresas” o “personas-empresa” que ofrecen sus productos o servicios por Internet ni siquiera están constituidas legalmente en su país y no se trata más que de gente que está “probando suerte en Internet”.
+Forma de Pago: Aunque ha avanzado mucho el comercio electrónico, todavía no hay una transmisión de datos segura el 100%. Y esto es un problema pues nadie quiere dar sus datos de la Tarjeta de Crédito por Internet. Poder volver (post y pre-venta):Con todo ello podemos reclamar en caso de ser necesario o pedir un servicio “post-venta”. Al conocerlo sabemos donde poder ir. El cliente espera recibir una atención “pre-venta” o “post-venta”.
+<br>
+FACTORES A CONSIDERAR EN COMERCIO ELECTRÓNICO
+Existen muchos aspectos abiertos en torno al comercio electrónico; entre ellos podemos destacar, la validez de la firma electrónica, la legalidad de un contrato electrónico, las violaciones de marcas y derechos de autor, pérdida de derechos sobre las marcas, pérdida de derechos sobre secretos comerciales y responsabilidades”. Por esto existen leyes aplicables para el comercio electrónico y lo anterior mencionado.
+        </p>
+    </div> 
+    
+     </div>
+</body>        
+
+</html>

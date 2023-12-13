@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+  	h1{
+  		font-family: courier new;
+  		color:#C71585;
+      align-text: center;
+
+  	}
+    h2{
+      font-family: courier new;
+      color: MediumVioletRed;
+      align-text: center;
+
+    }
+    h4{
+      font-family: courier new;
+      color: MediumVioletRed;
+      align-text: center;
+
+    }
+  	
+  	p{
+  		font-family: courier new;
+  		color:  rgba(252, 255, 251, 0.756);
+  		font-weight: bold;
+  	}
+  	.center-text{
+  		text-align: center;
+  	}
+
+#header{
+        width: 100%;
+        background:#FFC0CB;
+        margin: 1em auto;
+        border-radius: 1em;
+
+    }
+#contenedor{
+    
+        width: 15px;
+        height: 30px;
+        background:#DB7093;
+        margin:3em auto;
+        border-radius: 1em;
+    }
+ .contenedor{
+        background-color:  #DB7093 ;
+        height: 20vh;
+        margin: 2%;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }   
+    .container{
+        background-color: #DB7093 ;
+        padding: 15px;
+        margin: 20px;
+    }    
+
+  </style>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width-device-width, initial-scale=1">
+  <title>Unidad 2</title>
+</head>
+
+<div align="center" >
+    <img src="C:\Users\ximena\OneDrive\Desktop\TareasERS\PrograWeb\Unidad6/img21.jpg" width="380" height="300"> 
+</div>
+<div class="contenedor">
+    <div >
+     <h1>2.1 Buses</h1>
+    </div> 
+</div>
+<body bgcolor="#FFC0CB">
+    <div class="container">
+          <p>
+            BUS: Elemento responsable de establecer una correcta comunicación entre dos o más dispositivos del ordenador, 
+            una característica clave de un bus es que se trata un medio de transmisión compartido, es por lo tanto el dispositivo principal de comunicación.
+            El bus, quizá fuera mejor decir los buses ya que existen varios con diversas funciones, es un circuito que conecta el procesador central con todo el resto de componentes de la computadora. El bus sirve para que le llegue al procesador la información y las solicitudes de trabajo, desde el exterior,
+             y envíe hacia afuera los resultados del trabajo realizado.
+          </p>
+          <div class="container">
+            <h2 align = "center">2.1.1 Bus Local</h2>
+            <p>
+                El bus que conecta la CPU con los otros elementos del procesador se conoce como bus local o bus de la CPU. 
+                Es un bus muy rápido y conecta la CPU con las tarjetas de la placa base y los controladores de los dispositivos externos.
+            </p>
+      </div>  
+      <div class="container">
+        <h2 align = "center">2.1.2 Bus de datos</h2>
+        <p>
+            Está formado por varias líneas de control, cada una de las cuales transporta un bits a la vez, 
+            el número de líneas depende del tamaño de la palabra, si la palabra mide 32 bits se necesita un bus de datos con 32 líneas de modo que todos los bits de una palabra puedan trasmitirse al mismo tiempo.
+            El bus de datos transfiere tanto las instrucciones que provienen del procesador como las que se dirigen hacia él. Se trata de un bus bidireccional.
+        </p>
+  </div>  
+  <div class="container">
+    <h2 align = "center">2.1.3 Bus de direcciones</h2>
+    <p>
+        Permite el acceso a una palabra en particular en la memoria .El bus de dirección depende del espacio y el direccionamiento de la memoria, si la memoria tiene dos palabras, el bus de direcciones necesita transportar n bits a la vez, por consiguiente debe tener n bits.
+        <br>
+        Direcciones: Identifica el periférico referido.
+        <br>
+        El bus de direcciones, (también conocido como bus de memoria) transporta las direcciones de memoria al que el procesador desea acceder, para leer o escribir datos. Se trata de un bus unidireccional.
+    </p>
+   </div>  
+   <div class="container">
+    <h2 align = "center">2.1.4 Bus de control</h2>
+    <p>
+        Lleva la comunicación entre el CPU y la memoria. Por ejemplo debe haber un código enviado entre el CPU a la memoria para especificar una operación de lectura y escritura.
+        El numero de líneas utilizadas en el bus de control dependen del número total de comandos de control que necesita la computadora, si una computadora tiene dos acciones de control se necesitan N líneas pata el bus de control por que en N bits pueden definirse dos operaciones diferentes.
+        <br>
+        Control: Lleva información referente al estado de los periféricos (petición de interrupciones).
+    </p>
+    </div>  
+    <div class="container">
+        <h2 align = "center">2.1.5 Buses normalizados</h2>
+        <p>
+            Todos los buses poseen unas especificaciones normalizadas, como son:
+            <br>
+            – protocolos de transmisión de datos.
+            <br>
+            – velocidades y temporización de las transferencias.
+            <br>
+            – anchuras de los sub. 
+            <br>
+            – buses.
+            <br>
+            – sistema físico de conexión (conectores estandarizados).
+        </p>
+    </div>  
+</div>   
+</body>
+
+<div class="contenedor">
+    <div >
+     <h1>2.2 Direccionamiento</h1>
+    </div> 
+</div>
+<body bgcolor="#FFC0CB">
+    
+     <div class="container">
+            <h2 align = "center">2.2.1 Modo real</h2>
+            <p>
+            – Se utiliza para preparar el procesador para que opere en modo protegido
+            <br>
+            – Se caracteriza por 20 bits de espacio de memoria segmentado(significa que solo se puede direccionar un megabyte de memoria).
+            <br>
+            – No presenta protección de memoria o multitarea a nivel hardware.
+            <br>
+            – Acceso directo del software a la rutina del BIOS.
+            <br>
+            – Conocido como dirección real.
+            <br>
+            – Tiene un punto de vista físico (medios electrónicos) y lógico (forma de expresarse al guardar las direcciones).
+            <br> 
+            – Sus direcciones están indicadas en 5 dígitos hexadecimales.
+            <br>
+            – Trabaja sobre sistema operativo MS-DOS, DR2
+            <br>
+            – Desactiva las características del modo protegido. Para que sea compatible un software viejo con chip nuevo.
+            </p>
+        <div class="container">
+            <h2 align = "center">2.2.2 Modo protegido</h2>
+            <p>
+            – Tiene un espacio de dirección físico de 32 bits (Esta extensión no está presente en procesadores 80386 que tiene un bus 80286).
+            <br>
+            – Protección de memoria y soporte de hardware.
+            <br>
+            – Linux, Open BSD y Windows 3.0 corren en modo protegido.
+El modo protegido utiliza los registros de segmento como punteros a unos nuevos registros de dirección de 24 bits denominados tablas de descripción («descriptor tables»),
+ que permiten acceder a un máximo de (16 MBytes) de memoria física,de forma que los registros de segmento son selectores que marcan el inicio de una dirección de 24 bits. 
+ La memoria que se hacía accesible mediante este sistema se denominó memoria extendida, para distinguirla de la antigua EMS.
+ La posterior introducción del 80386, con registros de 32 bits, permitió direccionar hasta (4 GBytes) de memoria externa.
+            </p>
+        </div>    
+        <div class="container">
+            <h2 align = "center">2.2.3 Modo real virtual</h2>
+            <p>
+            – Diseñado para mejorar las multitareas y la estabilidad del sistema (soporta delhardware para memoria virtual y conmutación de memoria), protección de memoria.
+            <br>
+            – Opera en el microprocesador 8086.
+            <br>
+            – La mayoría de los sistemas operativos X86 corren en modo protegido,incluyendo Linux.
+            <br>
+            – Usado para ejecutar programas DOS en Windows/386, Windows 95,9,Milenium.
+            Esta técnica consiste en hacer creer al programa que dispone de más memoria que la físicamente disponible en RAM. Este artificio tiene sentido porque en ese memento (y actualmente), la memoria extendida era mayor que la físicamente disponible en muchos sistemas, además el disco duro era estándar en todos los equipos.
+            </p>
+        </div>
+</div>  
+</body>            
+
+<div class="contenedor">
+    <div >
+     <h1>2.3 Temporización</h1>
+    </div> 
+</div>
+<body bgcolor="#FFC0CB">
+    <div class="container">
+        <p>
+            El reloj de una computadora se utiliza para dos funciones principales:
+         <br>
+         – Para sincronizar las diversas operaciones que realizan los diferentes subcomponentes del sistema informático.
+         <br>
+         – Para saber la hora.
+         El reloj físicamente es un circuito integrado que emite una cantidad de pulsos por segundo, de manera constante. Al número de pulsos que emite el reloj cada segundo se llama Frecuencia del Reloj.La frecuencia del reloj se mide en Ciclos por Segundo, también llamados Hertzios, siendo cada ciclo un pulso del reloj. Como la frecuencia del reloj es de varios millones de pulsos por segundo se expresa habitualmente en Megaherzios.El reloj marca la velocidad de proceso de la computadora generando una señal periódica que es utilizada por todos los componentes del sistema informático para sincronizar y coordinar las actividades operativas, evitando el que un componente maneje unos datos incorrectamente o que la velocidad de transmisión de datos entre dos componentes sea distinta
+         Cuanto mayor sea la frecuencia del reloj mayor será la velocidad de proceso de la computadora y podrá realizar mayor cantidad de instrucción es elementales en un segundo.
+        </p>
+        <div class="container">
+            <h2 align="center">2.3.1 Reloj de sistema</h2>
+            <p>
+                Un reloj del sistema reside en la tarjeta madre. Este  envía una señal a todos los componentes de la computadora en ritmo, como un metrónomo.Generalmente, este ritmo se genera como una onda cuadrada.
+            </p>
+        </div>
+        <div class="container">
+            <h2 align = "center"> 2.3.2 Reset del sistema</h2>
+            <p>
+                El reset del sistema iniciar el equipo o forma de mandar al equipo a su estado inicial.Fuentes posibles del reset:
+<br>
+1.- RESET DE ALIMENTACION (POR): Es una transición positiva que genera un reset de alimentación y es usada solo en condiciones de encendido, no puede emplearse para reducciones en el voltaje de fuentes de alimentación.Por ejemplo: cuando se mantiene presionada la tecla de encendido por más de30 segundos.
+<br>
+2.- RESET EXTERNO (RESET): Sube un nivel lógico 1 en menos de 2 ciclos de reloj, después que un dispositivo interno lo desactiva cuando la condición de reset es detectada, la terminal reset, es dirigida a 0 por un dispositivo interno en4 ciclos de reloj, entonces se desactiva. Si la terminal después de 2 ciclos dereloj tiene un valor 0 la CPU asume que ocurrió un reset externo, si la terminal es alta esto indica que el reset fue iniciado internamente por el sistema o el monitor de reloj.Por ejemplo: cuando se presiona directamente el botón de reset que algunos ordenadores tienen.
+<br>
+3.-RESET DE NO ADECUADA OPERACIÓN DE LA COMPUTADORA (COP):La arquitectura MCU incluye un sistema, este tipo de reset (COP) para proteger contra las fallas del software cuando el COP es habilitado el software es responsable de guardar un temporizador.Por ejemplo: cuando se reinicia el equipo por un error de software.
+<br>
+4.- RESET DE MONITOR DE RELOJ: Esta basado en un conjunto internode resistor- capacitor que produce una demora de tiempo sin ningún flanco de reloj, el monitor de reloj puede generar opcional mente un reset del sistema, la función del monitor de reloj puede ser habilitada o deshabitada por el bit de control.Por ejemplo: cuando el ciclo de reloj disminuye debido a la fuente de energía.
+            </p>
+        </div>
+        <div class="container">
+            <h2 align = "center">2.3.3 Estados de espera</h2>
+            <p> 
+                Cuando se conectan tarjetas de la PC, un problema común es igualar la velocidad de los ciclos del bus con la de las tarjetas. Es común que una tarjeta sea más lenta que el bus. Así, El bus de la PC esta diseñado para resolver este problema.La señal ready del bus se puede usar para extender la longitud del ciclo del bus para igualar una tarjeta lenta o para el bus del sistema hasta que se sincronice con el ciclo de la tarjeta.
+
+Los ciclos del bus 8088 normalmente son de cuatro pulsos y se describen por T1 hasta T4. En algunos ciclos el hardware dela PC, automáticamente inserta un pulso ocioso extra llamado TW. La señal ready se usa para insertar estados nuevos o adicionales de espera. Debido a que los diferentes ciclos del bus requieren distintos tiempos, la señal ready se debe controlar de manera diferente.El hardware de la PC no inserta estados de espera en los ciclos de lectura o escritura a memoria, sino que esto lo hace la tarjeta usando la señal ready.Si se introduce un estado de espera, entonces el tiempo normal de acceso a la memoria (que es de 460 nseg con un reloj de 5 MHz) se alarga por un periodo de reloj (200 nseg) hasta 660 nseg.
+            </p>
+        </div>
+    </div>
+</body> 
+
+<div class="contenedor">
+    <div >
+     <h1>2.4 Interrupciones de Hardware.</h1>
+    </div> 
+</div>
+<body bgcolor="#FFC0CB">
+    
+     <div class="container">
+        <p>
+            INTERRUPCIÓN: Es el estado en el cual el microprocesador detiene la ejecución de un programa para atender una petición especial solicitada por el propio programa o por un dispositivo físico se divide en enmascarable y no enmascarable.
+        </p>
+        <div class="container">
+            <h2 align="center">2.4.1 Enmascarable</h2>
+            <p>
+                Enmascarable (IRQ): un nivel bajo en esta línea da lugar a una secuencia de interrupciones en la que se efectúa los siguientes pasos:
+             <br>       
+             1. Se termina de ejecutar la instrucción que estaba ejecutando en el memento dela petición de interrupción.
+             <br>
+             2. La CPU analiza el contenido del bit de registro si el valor es 1 se ignora la interrupción y continua ejecutándose el programa principal, si por lo contrario su valor es 0 la interrupción es aceptada.
+             <br>
+             3. Guarda del contenido del contador del programa y el registro en la pila e impide otra interrupción pasando a un nivel alto 1.
+            </p>
+        </div>
+        <div class="container">
+            <h2 align = "center">2.4.2 No-enmascarable</h2>
+            <p>
+                NMI una situación de baja en esta línea da lugar a una secuencia de interrupción en la que se efectúan las siguientes operaciones:
+             <br>
+             1. Se determina de ejecutar la instrucción que estaba ejecutando en el momento de la interrupción.
+             <br>
+             2.La CPU no analiza el contenido del bit de registro y sin importar el valor que tenga atiende la interrupción.
+             <br>
+             3.Guarda el contenido del contador del programa y el registro en la pila e impide otra interrupción poniendo al bit a 1.
+            </p>
+        </div>
+     </div>
+</body>             
+
+<div class="contenedor">
+    <div >
+     <h1>2.5 Acceso Directo a memoria</h1>
+    </div> 
+</div>
+<body bgcolor="#FFC0CB">
+    <div class="container">
+      <p>
+        Puesto que la mayoría de datos que maneja el ordenador están antes o después en la memoria RAM, los intercambios entre esta y el resto de elementos son muy frecuentes. En general este intercambio es conducido por el procesador, pero en determinados casos, la memoria pueda realizar intercambios directamente con los periféricos sin intervención del procesador. Por ejemplo, el disco o una tarjeta de sonido, lo que conduce a un incremento del rendimiento del sistema. El mecanismo de acceso directo a memoria está controlado por un chip específico, el DMAC (³DMA Controller´), que permite realizar estos intercambios sin apenas intervención del procesador. En los XT estaba integrado en un chip 8237A que proporcionaba 4 canales de 8 bits (puede mover solo 1 Byte cada vez); sus direcciones de puerto son 000±00Fh. Posteriormente en los AT se instalaron dos de estos integrados y las correspondientes líneas auxiliares en el bus de control .En contra de lo que podría parecer, el resultado no fue disponer de 8 canales.
+
+Para esto dispone de dos registros para cada línea; el contador y el registro de direcciones. Según se refieran a operaciones de lectura (memoria dispositivo) o escritura (dispositivo memoria) reciben distintos nombres porque su significado difiere:‡
+
+Escritura: Dirección de inicio (³Write starting  address´). Contador (³Writestarting word count´).
+
+Lectura: Dirección actual de lectura (³Read current address´). Contador (³Readremaining word count´).
+      </p>
+      <div class="container">
+        <h2 align = "center">2.5.1 Sistema de video</h2>
+        <p>
+            El término vídeo se refiere comúnmente a varios formatos: los formatos de vídeo digital, incluyendo DVD, DVC y MPEG-4, y las cintas de vídeo analógico, incluyendo VHS y Betamax. El video se puede grabar y transmitir en diversos medios físicos: en cinta magnética cuando las cámaras de video registran como PAL o NTSC señales analógicas, o cuando las cámaras graban en medios digitales como MPEG-4 o DV El vídeo puede ser entrelazado o progresivo.
+
+El entrelazado fue inventado como un método de lograr una buena calidad visual dentro de las limitaciones de un estrecho ancho de banda. Las líneas entrelazadas de cada imagen están numeradas consecutivamente y divididas en dos campos: el campo impar (campo superior), que consiste en las líneas de los números impares y el campo pares (casilla inferior), que consiste en las líneas de los números pares. NTSC, PAL y SECAM son formatos entre lazados. La calidad de video se puede medir con métricas formales como PSNR o subjetivas con calidad de video usando la observación de expertos. La calidad de video subjetiva de un sistema de procesamiento de video puede ser evaluada como sigue:‡
+<br>
+1. Elige las secuencias de video (el SRC) a usar para la realización del test.
+<br>
+2. Elige los ajustes del sistema a evaluar (el HRC).
+<br>
+3. Elige un método de prueba para presentar las secuencias de video a los expertos y recopilar su valoración.
+<br>
+4. Invita a un número suficiente de expertos, preferiblemente un número no menor de 15.
+<br>
+5. Realiza las pruebas.
+<br>
+6. Calcula la media para cada HRC basándote en la valoración de los expertos.
+        </p>
+      </div>
+      <div class="container">
+        <h2 align="center">2.5.2 Sistema de discos</h2>
+        <p>
+            Existen básicamente dos tipos de discos IDE y SCSI. Las controladoras IDE son las que normalmente encontramos integradas en la placa madre y son las de uso más normal en los ambientes domésticos. Las controladoras SCSI, son controladoras profesionales, orientadas normalmente al ámbito profesional, y los discos y tecnologías SCSI son las punteras. Los discos salen en tecnología SCSI y uno o dos años más tarde, se implementan en tecnología IDE. Es decir,los SCSI llevan un par de años de diferencia en avance tecnológico siempre con respecto a los DiscosIDE. Son los orientados normalmente al consumo domestico.Existen dos técnicas de acceso a estos discos. Son los modos PIO y los modosDMA.Técnicas de acceso I/OModos PIO: En los discos antiguos, el acceso a disco se hacía mediante técnicas PIO (Program Input/Output).En cualquier caso conviene indicar las fuentes más importantes de información asociada a vulnerabilidades de seguridad. 
+        </p>
+      </div>
+    </div>
+</body>       
+</html>
